@@ -1,0 +1,45 @@
+// a-unstyled
+
+.a-unstyled a,
+.a-unstyled a:link,
+.a-unstyled a:visited {
+  color: $text-color;
+  text-decoration: none;
+}
+
+// ul-unstyled
+
+ul li,
+ol li {
+  color: #ababab;
+}
+
+li span,
+ol span, {
+  color: #1d2459;
+}
+
+.ul-unstyled ul,
+ul.unstyled {
+  padding-left: 0;
+  margin-left: 0;
+  list-style-type: none;
+}
+
+.ul-unstyled ul li,
+ul.unsttled li {
+  color: $text-color;
+}
+
+// ul-inline
+
+.ul-inline ul li,
+ul.inline li {
+  display: inline;
+  margin-right: 5px;
+}
+
+.ul-inline ul li:last-child,
+ul.inline li:last-child {
+  margin-right: 0;
+}

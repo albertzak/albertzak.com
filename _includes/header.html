@@ -1,0 +1,21 @@
+<header class="header">
+  <div class="container a-unstyled">
+    <figure>
+      <a href="/">
+        <img class="rounded photo" src="/images/Albert_Zak.jpg" alt="Photo of Albert Zak in front of Tha Phae Gate in Chiang Mai, Thailand" title="Albert Zak"/>
+      </a>
+    </figure>
+
+    <aside>
+      <a href="/">
+        {% if page.body_class == 'home' %}
+          <h1 class="title">Hi, I'm {{ site.title }}.</h1>
+        {% else %}
+          <span class="h1 title">Hi, I'm {{ site.title }}.</span>
+        {% endif %}
+      </a>
+
+      <p>{{ site.description }}</p>
+    </aside>
+  </div>
+</header>

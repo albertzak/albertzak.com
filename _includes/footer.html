@@ -1,0 +1,47 @@
+<aside class="archive">
+  <div class="container">
+    <h3>Posts</h3>
+    <ol>
+      {% for post in site.posts %}
+        {% if post.published %}
+          <li>
+            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ol>
+  </div>
+</aside>
+
+<footer>
+  <div class="container">
+    <section>
+      <h3 class="text-center">
+        Every month, I'll send you an email with personal updates.
+      </h3>
+
+      {% include newsletter.html %}
+
+    </section>
+  </div>
+</footer>
+
+<footer class="dark-bg small">
+  <div class="container">
+    <ul class="inline unstyled">
+      <li><a href="/" title="Go to Albert Zak's Home Page">Home</a></li>
+      <li><a href="mailto:{{ site.email }}" title="Send Albert Zak an Email">{{ site.email }}</a>
+      <li><a href="/imprint/" title="Information required by Austrian law">Imprint</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+<script>
+  if( ! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    $('.bg').backstretch('/images/bg-deer.jpg');
+  }
+
+  $('li').wrapInner('<span/>');
+</script>
