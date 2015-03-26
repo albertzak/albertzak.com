@@ -13,3 +13,9 @@ Albert Zak
   1210 Vienna<br>
   Austria
 </address>
+
+<br>
+
+<small class="text-muted">
+  {{ site.builddate }} &middot; <a href="https://github.com/albertzak/albertzak.com/commit/{{ site.commit }}">{{ site.commit | truncate: 10 | replace: '...', '' }}</a>
+</small>

@@ -1,5 +1,9 @@
 ---
 layout: page
+excerpt: >
+  Hi, I'm Albert Zak. I believe in
+  making useful things and living
+  an unconventional life.
 class: ul-unstyled ul-inline
 body_class: home
 ---
